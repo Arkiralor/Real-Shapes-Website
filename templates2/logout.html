@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Real Shapes</title>
+    <link rel = "stylesheet" type = "text/css" href = "{% static 'css/styles.css' %}">
+  </head>
+  <body>
+    <header>
+      <div class = "main">
+        <div class = "logo">
+          <a href = "index.html">
+            <img src= "{% static 'assets\logo\RS-Logo.png' %}">
+          </a>
+        </div>
+        <div>
+          <ul>
+              <li><a href = "/">Home</a></li>
+              <li><a href = "services">Services</a></li>
+              <li><a href = "registerlogin">Register/Login</a></li>
+              <li class= "active"><a href = "logout">Logout</a></li>
+              <li><a href = "scart">Shopping Cart</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </body>
+
+</html>

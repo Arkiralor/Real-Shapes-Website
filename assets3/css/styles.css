@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Century Gothic";
+}
+header{
+  background-color: #242424;
+  background-image: url(../assets/images/background.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  position: sticky;
+  top: 0;
+}
+
+body{
+  background-color: #242424;
+  background-image: url(../assets/images/background.jpg);
+  height: 100%;
+  background-size: cover;
+  background-position: top;
+}
+
+ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a{
+  background-color: #242424;
+  text-decoration: none;
+  color: #fff;
+  padding: 25px 10vh;
+  border: none;
+}
+
+ul li a:hover{
+  background: linear-gradient(180deg, #242424 0%, #242424 25%, #7c003b 100%);
+  color: #fff;
+  transition: 0.6s ease-in;
+}
+
+ul li.active a{
+  background: linear-gradient(180deg, #242424 0%, #242424 25%, #7c003b 100%);
+  color: #fff;
+}
+
+.logo img{
+  float: left;
+  width: 100px;
+  height: auto;
+}
+
+.main{
+  max-width: 1200px
+  margin: auto;
+}
+
+.title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title h1{
+  color: #fff;
+  font-size: 70px;
+  font-family: "Century Gothic";
+}
+
+.title text{
+  color: #fff;
+  font-size: 16px;
+  font-family: "Century Gothic";
+}
+
+table{
+  position: absolute;
+  font-size: 16px;
+  font-family: "Century Gothic";
+  
+}
+
+table .inptxt{
+  width: 300px;
+  height: 50px;
+  padding-left: 5px;
+}
+
+.button{
+  background-color: #7c003b;
+  border: none;
+  color: #fff;
+  padding: 1px;
+  margin: 14px 25px;
+  width: 100px;
+  height: 50px;
+  font-size: 25;
+}
+
+.button:hover{
+  background-color: #fff;
+  border: 1;
+  border-color: #000000;
+  color: #000000;
+  cursor: pointer;
+  transition: 0.6s ease;
+}

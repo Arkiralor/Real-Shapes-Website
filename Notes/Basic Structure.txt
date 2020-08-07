@@ -1,0 +1,23 @@
+home-services-((register/login)/logout)-shopping cart (only if user auth)-history (only if user auth)
+-----------------------------------------------------------------------------------------------------
+Table-user
+id-fname-lname-email-password-phnumber-address-city-state-pin
+
+table-services
+id-desc-cost
+
+table-transactions(derived)
+id-productcode(FK)-productname-qty-unitprice-cost-custID(FK)-date-deladdress
+-----------------------------------------------------------------------------------------------------
+Home
+list of highlighted services 
+
+services
+list of ALL services
+
+shopping cart
+list of items not yet bought but intend to buy
+
+history
+list of all purchases OF USER (SELECT * FROM Transactions WHERE transactions.CustID = user.id) 
+-----------------------------------------------------------------------------------------------------

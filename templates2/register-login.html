@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Real Shapes</title>
+    <link rel = "stylesheet" type = "text/css" href = "{% static 'css/styles.css' %}">
+    <link rel = "icon"  href = "{% static 'assets\logo\favicon.ico' %}">
+  </head>
+  <body>
+    <header>
+      <div class = "main">
+        <div class = "logo">
+          <a href = "/">
+           <img src= "{% static 'assets\logo\RS-Logo.png' %}">
+          </a>
+        </div>
+        <div>
+          <ul>
+              <li><a href = "/">Home</a></li>
+              <li><a href = "services">Services</a></li>
+              <li class= "active"><a href = "registerlogin">Register/Login</a></li>
+              <li><a href = "logout">Logout</a></li>
+              <li><a href = "scart">Shopping Cart</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <table border = 0 width = 100% style = "margin-top: 10px;">
+        <tr class = "loginform">
+            <td align = "center" >
+                <h3>Login Existing User</h3><br>
+                <form name = "login" method = "post" action = 'login'>
+                    {% csrf_token %}
+                    <div><input class = "inptxt" type = "email" name = "useremail" placeholder = "email ID"></div><br>
+                    <div><input class = "inptxt" type = "password" name = "userpwd" placeholder = "Password"></div><br>
+                    <div><input  class = "button" type = "submit" name = "submit" value = "Login"></div><br>
+                </form>
+            </td>
+            <td align = "center" >
+                  <h3>Register New User</h3><br>
+                  <form name = "register" method = "post" action = 'register'>
+                    {% csrf_token %}
+                    <div><input  class = "inptxt" type = "text" name = "fname" placeholder = "First Name"></div><br>
+                    <div><input class = "inptxt" type = "text" name = "lname" placeholder = "Last Name"></div><br>
+                    <div><input class = "inptxt" type = "email" name = "useremail1" placeholder = "email ID"></div><br>
+                    <div><input class = "inptxt" type = "email" name = "useremail2" placeholder = "Confirm email ID"></div><br>
+                    <div><input class = "inptxt" type = "text" name = "userphn" placeholder = "Contact Number"></div><br>
+                    <div><input class = "inptxt" type = "password" name = "userpwd1" placeholder = "Password"></div><br>
+                    <div><input class = "inptxt" type = "password" name = "userpwd2" placeholder = "Confirm Password"></div><br>
+                    <div><input class = "inptxt" type = "text" name = "useradd1" placeholder = "Adress Line 1"></div><br>
+                    <div><input class = "inptxt" type = "text" name = "useradd2" placeholder = "Adress Line 2"></div><br>
+                    <div><input class = "inptxt" type = "text" name = "usercity" placeholder = "City"></div><br>
+                    <div><input class = "inptxt" type = "text" name = "userdist" placeholder = "District"></div><br>
+                    <div><input class = "inptxt" type = "text" name = "userstate" placeholder = "State"></div><br>
+                    <div><input class = "inptxt" type = "text" name = "userpincode" maxlength = 6 minlength = 6 placeholder = "Pin Code"></div><br>
+                    <div><input class = "button" type = "submit" name = "submit" value = "Register"></div><br>
+                 </form>
+            </td>
+        </tr>
+    </table>
+  </body>
+</html>
