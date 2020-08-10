@@ -82,7 +82,13 @@
     display: block;
     width: 250px;
     height: auto;
-    }
+  }
+
+  .spic img:hover{
+    color: #242424;
+    opacity: 0.25;
+    transition: 0.5s;
+  }
   
   .shigh{
     display: block;
@@ -96,6 +102,16 @@
     padding: 5px 3px 8px 3px;
   }
 
+  .shigh text{
+    text-align: center;
+  }
+
+  .shigh:hover{
+    background-color: #fff;
+    color: #858585;
+    transition: 0.3s ease;
+  }
+
   .slow{
     display: block;
     position: relative;
@@ -107,17 +123,6 @@
     width: 70px;
     height: 16px;
     padding: 5px 5px 5px 5px 5px;
-  }
-
-  .shigh text{
-      text-align: center;
-    
-  }
-  
-  .shigh:hover{
-    background-color: #fff;
-    color: #858585;
-    transition: 0.3s ease;
   }
 
   .sname{
