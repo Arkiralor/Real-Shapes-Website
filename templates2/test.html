@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Real Shapes</title>
+    <!--<link rel = "stylesheet" type = "text/css" href = "{% static 'css/styles.css' %}">-->
+    <link rel = "icon"  href = "{% static 'assets\logo\favicon.ico' %}">
+  </head>
+  <body>
+
+    <h1 color = #000000 size = 16px align = "center">
+      List of Services:<br>
+    </h1>
+    <!--List of services starts here-->
+
+    {% for test in test %}
+      <div><h2>{{test.servname}}</h2></div>
+      <div><img src = "{{test.servpic.url}}" alt = ""></div>
+      <div>{{test.servdesc}}</div>
+      <div>{{test.servcost}}</div>
+      <div>{{test.servishigh}}</div>
+      <br>
+      <br>
+    {% endfor %}
+
+  </body>
+
+</html>

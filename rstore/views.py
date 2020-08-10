@@ -1,14 +1,23 @@
 from django.shortcuts import render
+from .models import serv
 
 
 def index(request):
-    return render(request, 'index.html')
+    service = serv.objects.all()
+    return render(request, 'index.html', {'service': service})
+
+def test(request):
+    serv1 = serv.objects.all()
+    return render(request, 'test.html', {'test' : serv1})
+
 
 def registerlogin(request):
+    
     return render(request, 'register-login.html')
 
 def services(request):
-    return render(request, 'services.html')
+    service = serv.objects.all()
+    return render(request, 'services.html', {'service' : service})
 
 def logout(request):
     return render(request, 'logout.html')
@@ -27,3 +36,4 @@ def register(request):
         pass
     else:
         return render(request, 'register-login.html')
+

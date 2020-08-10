@@ -1,15 +1,17 @@
 {% load static %}
+{% static "media/" as baseUrl %}
 <!DOCTYPE html>
 <html>
   <head>
     <title>Real Shapes</title>
-    <link rel = "stylesheet" type = "text/css" href = "{% static 'css/styles.css' %}">
+    <link rel = "stylesheet" type = "text/css" href = "{% static 'css/styleservices.css' %}">
+    <link rel = "icon"  href = "{% static 'assets\logo\favicon.ico' %}">
   </head>
   <body>
     <header>
       <div class = "main">
         <div class = "logo">
-          <a href = "index.html">
+          <a href = "/">
             <img src= "{% static 'assets\logo\RS-Logo.png' %}">
           </a>
         </div>
@@ -24,6 +26,64 @@
         </div>
       </div>
     </header>
+
+    <!--List of services starts here-->
+    <table>
+    </table>
+    <br>
+    <div class = "servicegrid">
+    {% for service in service %}
+      <div class = "servicecontainer">
+        <div class = "sname"><h2>{{service.servname}}</h2></div>
+        <div class = "spic" align = "center">
+          {% if service.servishigh%}
+            <div class = "shigh">
+              <text>HOT!!!</text>
+            </div>
+          {% else %}
+            <div class = "slow">
+              <text></text>
+            </div>
+          {% endif %}
+          <a href = "#"><img src = "{{service.servpic.url}}"></a>
+        </div>
+        <div class = "sdesc">{{service.servdesc}}</div>
+        <div class = "sprice">{{service.servcost}}</div>
+        <br>
+      </div>
+    {% endfor %}
+    </div>
+    
+    
+    
+    <!--<div class = "services">
+      <table class = "servicetable">
+        <tr width = 1200 px height = 350px>
+        {% for service in service %}
+          <td width = 25% height = 100%>
+          
+            <div class = "servname">
+              <h2>{{service.servname}}</h2>
+            </div>
+            <div class = "servpic">
+              <img src = "{{service.servpic.url}}">
+              {% if service.servishigh %}
+                <div class = "highlighttxt">Highlighted</div>
+              {% endif %}
+            </div>
+            <div class = "servdesc">
+              <text class = "servdesctxt">{{service.servdesc}}</text>
+            </div>
+            <div class = "servprice">
+              <text class = "price"><b>Starting from: Rs. {{service.servcost}}/-</b></text>
+            </div>
+          
+          </td>
+        {% endfor %}
+        </tr>
+      </table>
+    </div>-->
+
   </body>
 
 </html>

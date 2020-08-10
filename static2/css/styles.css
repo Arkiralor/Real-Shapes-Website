@@ -61,23 +61,25 @@ ul li.active a{
 }
 
 .title{
-  position: absolute;
-  top: 50%;
+  position: center;
+  /*top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
 }
 
-.title h1{
+.title tr td h1{
   color: #fff;
   font-size: 70px;
   font-family: "Century Gothic";
 }
 
-.title text{
+.title tr td text{
   color: #fff;
   font-size: 16px;
   font-family: "Century Gothic";
 }
+
+/*For Form*/
 
 table{
   position: absolute;
@@ -121,4 +123,85 @@ table .inptxt{
   font-family: "Century Gothic";
   color: #fff;  
 }
+
+/* For Services */
+
+.servicegrid{
+  display: inline-block;
+  position: relative;
+  top: 50px;
+}
+
+.servicegrid .servicecontainer{
+display: inline-block;
+background-color: #fff;
+width: 300px;
+height: 375px;
+margin: 5px 5px;
+padding: 1px 1px;
+vertical-align: top;
+}
+
+.spic img{
+display: block;
+width: 250px;
+height: auto;
+}
+
+.shigh{
+display: block;
+position: relative;
+top: 32px;
+left: -80px;
+background-color: #242424;
+color: #fff;
+width: 70px;
+height: 16px;
+padding: 5px 3px 8px 3px;
+}
+
+.slow{
+display: block;
+position: relative;
+top: 32px;
+left: -80px;
+background-color: #242424;
+opacity: 0;
+color: #fff;
+width: 70px;
+height: 16px;
+padding: 5px 5px 5px 5px 5px;
+}
+
+.shigh text{
+  text-align: center;
+
+}
+
+.shigh:hover{
+background-color: #fff;
+color: #858585;
+transition: 0.3s ease;
+}
+
+.sname{
+  color: #242424;
+  font-size: 21px;
+  margin-left: 5px;
+}
+.sname:hover{
+    color: #ff5cc0;
+    transition: 0.3s ease;
+
+}
+
+.sdesc{
+  margin-left: 5px;
+}
+
+.sprice{
+margin-left: 5px;
+}
+
+
 

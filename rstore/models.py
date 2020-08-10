@@ -29,7 +29,7 @@ class trans(models.Model):
     servname = models.CharField(max_length=16)
     servcost = models.IntegerField(default= 0)
     servqnt = models.IntegerField(default= 0)
-    servtotal = models.IntegerField(default= 0)
+    servtotal = models.IntegerField
     cust = models.IntegerField(default= 0)
     custname = models.CharField(max_length=16)
 
