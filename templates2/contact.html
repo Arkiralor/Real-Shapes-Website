@@ -1,0 +1,74 @@
+{% load static %} {% static "media" as baseUrl %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Real Shapes</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <link rel="icon" href="{% static 'assets\logo\favicon.ico' %}">
+    <script src="{% static 'js\scripts.js' %}"></script>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="/">
+                    <img src="{% static 'assets\logo\RS-Logo.png' %}">
+                </a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="services">Services</a></li>
+                    <li><a href="about">About Us</a></li>
+                    <li class="active"><a href="contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <table class="title" align="center" width=100%>
+        <tr align="center">
+            <td>
+                <h1>Real Shapes</h1>
+                <text>We realize your dreams...</text>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table class="msgtable" border=0 width=1 00% style="margin-top: 16px;">
+        <tr class="msgform">
+            <td align="center">
+                <form name="msgform" action="contact" method="POST">
+                    {% csrf_token %}
+                    <div><input class="inptxt" type="text" name="visname" placeholder="Your name"></div><br>
+                    <div><input class="inptxt" type="email" name="visemail" placeholder="Your email ID"></div><br>
+                    <div><input class="inptxt" type="text" name="visphone" placeholder="Your Phone Number" id = "visphone"></div><br>
+                    <div><input class="msgtxt" type="textarea" name="vismsg" placeholder="Your Message"></div><br>
+                    <div><input class="button" type="submit" name="send" value="Send"></div><br>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table width = 100%>
+        <tr width = 100%>
+            <td width = 100%>
+                <footer class = "footer">
+                    <div class = "footerdiv">
+                            <a href="messages">Messages</a>
+                    </div>
+                </footer>
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

@@ -10,18 +10,18 @@ class serv(models.Model):
     servishigh = models.BooleanField(default=False)
 
 
-class users(models.Model):
-    usrfname = models.CharField(max_length=16)
-    usrlname = models.CharField(max_length=16)
-    usremail = models.CharField(max_length=32)
-    usrphn = models.CharField(max_length=12)
-    usrpwd = models.CharField(max_length=16)
-    usradd1 = models.CharField(max_length=64)
-    usradd2 = models.CharField(max_length=64)
-    usrcity = models.CharField(max_length=16)
-    usrdist = models.CharField(max_length=16)
-    usrstate = models.CharField(max_length=16)
-    usrpincode = models.CharField(max_length=7)
+class cust(models.Model):
+    custfname = models.CharField(max_length=16)
+    custlname = models.CharField(max_length=16)
+    custemail = models.CharField(max_length=32)
+    custphn = models.CharField(max_length=12)
+    custpwd = models.CharField(max_length=16)
+    custadd1 = models.CharField(max_length=64)
+    custadd2 = models.CharField(max_length=64)
+    custcity = models.CharField(max_length=16)
+    custdist = models.CharField(max_length=16)
+    custstate = models.CharField(max_length=16)
+    custpincode = models.CharField(max_length=7)
 
 
 class trans(models.Model):
@@ -42,3 +42,9 @@ class cart(models.Model):
     servtotal = models.IntegerField(default= 0)
     cust = models.IntegerField(default= 0)
     custname = models.CharField(max_length=16)
+
+class msg(models.Model):
+    mname = models.CharField(max_length=16)
+    memail = models.CharField(max_length=32)
+    mphone = models.CharField(max_length=10)
+    mmsg = models.TextField()

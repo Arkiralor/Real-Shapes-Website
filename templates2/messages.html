@@ -1,0 +1,38 @@
+{% load static %}
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Recorded Messages</title>
+    <link rel="stylesheet" href="{% static 'static2\css\styles.css'%}">
+  <link rel = "icon"  href = "{% static 'assets\logo\favicon.ico' %}">
+</head>
+
+<body>
+    <!--{% if user.is_autheticated %}-->
+        <h1>Good Morning, {{ user.first_name}}.</h1>
+    <!--{% endif %}-->
+
+    <table>
+            <tr width = 100% height = "auto">
+                <td width = 19%><h5> Name of Sender </h5></td>
+                <td width = 19%><h5> Sender's Email </h5></td>
+                <td width = 19%><h5> Sender's Phone no. </h5></td>
+                <td width = 19%><h5> Message </h5></td>
+            </tr>
+        
+            {% for message in message %}
+            <tr width = 100% height = "auto">
+                <td width = 25%> {{message.mname}} </td>
+                <td width = 25%> {{message.memail}} </td>
+                <td width = 25%> {{message.mphone}} </td>
+                <td width = 25%> {{message.mmsg}} </td>
+            </tr>
+            {% endfor %}
+    </table>
+    <div><a href="/">Home</a><div>
+    <div><a href="contact">Back</a><div>
+</body>
+</html>

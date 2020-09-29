@@ -1,0 +1,69 @@
+{% load static %}
+{% static "media" as baseUrl %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Real Shapes</title>
+    <link rel = "stylesheet" type = "text/css" href = "{% static 'css/styles.css' %}">
+    <link rel = "icon"  href = "{% static 'assets\logo\favicon.ico' %}">
+  </head>
+  <body>
+    <header>
+      <div class = "main">
+        <div class = "logo">
+          <a href = "/">
+            <img src= "{% static 'assets\logo\RS-Logo.png' %}">
+          </a>
+        </div>
+        <div>
+          <ul>
+              <li><a href = "/">Home</a></li>
+              <li><a href = "services">Services</a></li>
+              <li class= "active"><a href = "about">About Us</a></li>
+              <li><a href = "contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <table class = "abtable" width = 100%>
+        <tr width = 100%>
+            <td width = 100% align = "center">
+                <div class = "abtitle">
+                    <h1>Real Shapes</h1>
+                    <text>We realize your dreams...</text>
+                </div>
+            </td>
+        </tr>
+        <tr width = 100%>
+            <td width = 100% align = "center">
+                <div class = "abtxt">
+                    <text>
+                        Real Shapes is an initiative of Mantra Associates which deals with <br>
+                        Design and Printing mainly on sublimation and Vinyl surface products <br>
+                        with high strength, light weight, higher accuracy and high quality. <br>
+                        <br>
+                        We have a wide range of products such:<br>
+                        T-Shirt Printing, Mug Printing, ID card Printing, Caps, Mouse pad, Sipper, Beer Mug, <br>
+                        Wall Hanging, Clock, Tiles, Key Ring MDF, Key Ring Acrylic, Key Ring Polymer, <br>
+                        Bed Sheet, Pillow Cover, Coasters, Glass Mugs, Stone,Photo Frame, Badges, Hoodies <br>
+                        and many more Printable products.
+
+                        <br>
+                        <br>
+                        Our mission is to provide the best quality products to our valuable clients. <br>
+                        We have a team of highly skilled professionals, engineers and technical staff <br>
+                        which ensures the on time delivery of high quality products to the clients <br>
+                        and as well as in the markets. <br>
+                        <br>
+                        Real Shapes doesn’t compromise the product with the price <br>
+                        hence clients can blindly trust the service provided by us.<br>
+                    </text>
+                </div>                
+            </td>
+        </tr>
+    </table>
+    
+
+  </body>
+
+</html>

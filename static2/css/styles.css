@@ -79,14 +79,16 @@ ul li.active a{
   font-family: "Century Gothic";
 }
 
-/*For Form*/
-
 table{
   position: absolute;
   font-size: 16px;
   font-family: "Century Gothic";
   
 }
+
+/*For Form*/
+
+
 
 table .inptxt{
   width: 300px;
@@ -134,6 +136,7 @@ table .inptxt{
 
 .servicegrid .servicecontainer{
 display: inline-block;
+position: relative;
 background-color: #fff;
 width: 300px;
 height: 375px;
@@ -148,10 +151,16 @@ width: 250px;
 height: auto;
 }
 
+.spic img:hover{
+  opacity: 0.5;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
 .shigh{
 display: block;
 position: relative;
-top: 32px;
+top: 35px;
 left: -80px;
 background-color: #242424;
 color: #fff;
@@ -169,7 +178,7 @@ background-color: #242424;
 opacity: 0;
 color: #fff;
 width: 70px;
-height: 16px;
+height: 26px;
 padding: 5px 5px 5px 5px 5px;
 }
 
@@ -203,5 +212,69 @@ transition: 0.3s ease;
 margin-left: 5px;
 }
 
+/* For about us */
 
+.abtable{
+  position: static;
+  top: 60px;
+  width: 100%;
+  height: auto;
+}
+
+.abtable .abtitle h1{
+  font-size: 70px;
+  font-family: "Century Gothic";
+  color: #fff;
+}
+
+.abtable .abtitle text{
+  font-size: 35px;
+  font-family: "Century Gothic";
+  font-style: italic;
+  color: #fff;
+}
+
+.abtable .abtxt text{
+  position: relative;
+  top: 60px;
+  font-size: 21px;
+  font-family: "Century Gothic";
+  font-style: italic;
+  color: #fff;
+}
+
+/* For Messages */
+
+.msgtable{
+  position: relative;
+  top: 150px;
+  width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+.msgtxt{
+  width: 300px;
+  height: 192px;
+  padding-left: 5px;
+  margin: 3px;
+  top: 3px;
+}
+
+.footer{
+  position: absolute;
+  bottom: 100%;
+}
+
+.footerdiv{
+  width: 10%;
+  height: 7%;
+  float: left;
+  color: #ff5cc0;
+  margin: 5px 5px 5px 5px;
+  padding: 1px 1px 1px 1px;
+}
+.footerdiv:hover{
+  color: #fff;
+}
 
