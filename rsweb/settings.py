@@ -25,7 +25,8 @@ SECRET_KEY = 'w(n(lt9uf75+jesrtxjh@hgw--h+s5ssa---x73i50sul0l9pf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.29.40', 'localhost']
+##ALLOWED_HOSTS = ['192.168.29.40', 'localhost']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -74,13 +75,20 @@ WSGI_APPLICATION = 'rsweb.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+##DATABASES = {
+##    'default': {
+##        'ENGINE': 'django.db.backends.postgresql',
+##       'NAME': 'realshapes',
+##        'USER': 'postgres',
+##        'PASSWORD': 'Driftking11235',
+##        'HOST': 'localhost'
+##    }
+##}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'realshapes',
-        'USER': 'postgres',
-        'PASSWORD': 'Driftking11235',
-        'HOST': 'localhost'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'db.sqlite3',
     }
 }
 

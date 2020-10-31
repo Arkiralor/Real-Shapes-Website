@@ -2,6 +2,7 @@
 ##from django.contrib.auth.models import user, auth
 from django.shortcuts import render, redirect
 from .models import serv, msg
+from django.contrib.auth.decorators import login_required
 
 
 
@@ -17,6 +18,7 @@ def services(request):
     service = serv.objects.all()
     return render(request, 'services.html', {'service' : service})
 
+
 def contact(request):
     if request.method == 'POST':
         mname = request.POST['visname']
@@ -31,6 +33,7 @@ def contact(request):
         return render(request, 'contact.html')
 
 ##Messages
+@login_required(login_url='/admin') #redirect when user is not logged in
 def messages(request):
     message1 = msg.objects.all()
     return render(request, 'messages.html', {'message': message1})

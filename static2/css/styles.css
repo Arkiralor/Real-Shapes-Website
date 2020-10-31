@@ -5,16 +5,17 @@
 }
 header{
   background-color: #242424;
-  background-image: url(../assets/images/background.jpg);
+  /*background-image: url(../assets/images/background.jpg);*/
   height: 12vh;
   background-size: cover;
   background-position: top;
 }
 
 body{
-  background-color: #242424;
-  background-image: url(../assets/images/background.jpg);
-  height: 100%;
+  background: linear-gradient(180deg, #242424 0%, #242424 25%, #7c003b 100%);
+  /*background-image: url(../assets/images/background.jpg);*/
+  /*height: 100%;*/
+  height: auto;
   background-size: cover;
   background-position: top;
 }
@@ -22,7 +23,7 @@ body{
 ul{
   float: right;
   list-style-type: none;
-  margin-top: 25px;
+  padding-top: 25px;
 }
 
 ul li{
@@ -52,7 +53,8 @@ ul li.active a{
   float: left;
   width: 100px;
   height: auto;
-  margin: 3px 5px;
+  margin: 7px 7px 7px 7px;
+  padding: 3px 3px 3px 3px;
 }
 
 .main{
@@ -62,9 +64,6 @@ ul li.active a{
 
 .title{
   position: center;
-  /*top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
 }
 
 .title tr td h1{
@@ -91,8 +90,14 @@ table{
 
 
 table .inptxt{
-  width: 300px;
+  width: 500px;
   height: 50px;
+  padding-left: 5px;
+}
+
+table .msgtxt{
+  width: 500px;
+  height: 300px;
   padding-left: 5px;
 }
 
@@ -132,6 +137,8 @@ table .inptxt{
   display: inline-block;
   position: relative;
   top: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .servicegrid .servicecontainer{
@@ -139,9 +146,9 @@ display: inline-block;
 position: relative;
 background-color: #fff;
 width: 300px;
-height: 375px;
+height: 450px;
 margin: 5px 5px;
-padding: 1px 1px;
+padding: 5px 5px;
 vertical-align: top;
 }
 
@@ -162,7 +169,7 @@ display: block;
 position: relative;
 top: 35px;
 left: -80px;
-background-color: #242424;
+background-color: #7c003b;
 color: #fff;
 width: 70px;
 height: 16px;
@@ -212,19 +219,51 @@ transition: 0.3s ease;
 margin-left: 5px;
 }
 
+.conbox{
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 35%;
+  margin-right: 35%;
+  width: 30%;
+  height: 100px;
+  background-color: #7c003b;
+  vertical-align: middle;
+  align-content: center;
+  border-radius: 10px;
+}
+
+.conbox:hover{
+  background-color: #fff;
+}
+
+.context{
+  position: relative;
+  top: 25px;
+  font-size: 35px;
+  color: #fff;
+}
+
+.context:hover{
+  color: #7c003b;
+}
+
 /* For about us */
 
 .abtable{
-  position: static;
+  position: relative;
   top: 60px;
   width: 100%;
   height: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .abtable .abtitle h1{
   font-size: 70px;
   font-family: "Century Gothic";
   color: #fff;
+  
 }
 
 .abtable .abtitle text{
@@ -241,6 +280,8 @@ margin-left: 5px;
   font-family: "Century Gothic";
   font-style: italic;
   color: #fff;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 /* For Messages */
@@ -251,6 +292,8 @@ margin-left: 5px;
   width: 100%;
   height: auto;
   align-self: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .msgtxt{
@@ -266,15 +309,45 @@ margin-left: 5px;
   bottom: 100%;
 }
 
-.footerdiv{
-  width: 10%;
-  height: 7%;
-  float: left;
-  color: #ff5cc0;
-  margin: 5px 5px 5px 5px;
-  padding: 1px 1px 1px 1px;
+
+.footdiv{
+  border-top: #fff;
+  margin-top: 250px;
+  position: relative;
+  background: linear-gradient(0deg, #242424 0%, #242424 25%, #7c003b 100%);
+  opacity: 100%;
 }
-.footerdiv:hover{
+
+.foot{
+  border-top-style: solid;
+  border-width: 1px;
+  margin-top: 25px;
+  padding: 5px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #ffff;
+}
+
+.foottext text{
+  align-self: left;
+  width: 100%;
+  height: auto;
+  opacity: 100%;
+  font-size: 25px;
+  font-family: "Century Gothic";
+  font-style: italic;
   color: #fff;
+}
+
+.hyper{
+  font-family: "Century Gothic";
+  color: #fff;
+  text-decoration: none;
+}
+
+.hyper:hover{
+  color: #7c003b;
 }
 

@@ -1,0 +1,5 @@
+1. Footer border
+2. Limit home page item to 4 with view all button.
+3. Designed, developed & maintained by Mantra Associates
+4. (c) 2020 Realshapes Pvt. Ltd.
+5. Contact us for queries & quotations.

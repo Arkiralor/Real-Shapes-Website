@@ -14,5 +14,6 @@ urlpatterns = [
     path('about', views.about, name = 'about'),
     path('messages', views.messages, name = 'messages'),
     path('test', views.test, name = 'test')
+    ##path('mantra', views.test, name = 'mantra')
 
 ]
