@@ -45,7 +45,7 @@
     <br>
     <div class = "servicegrid">
     {% for service in service%}
-      {% if service.servishigh%}
+      <!--{% if service.servishigh%}-->
       <div class = "servicecontainer">
         <div class = "sname"><h2>{{service.servname}}</h2></div>
         <div class = "spic" align = "center">
@@ -60,7 +60,7 @@
         <div class = "sprice"><b><strong>Starting Price:</strong> Rs {{service.servcost}}/-</b></div>
         <br>
       </div>
-      {% endif %}
+      <!--{% endif %}-->
     {% endfor %}
     </div>
     <div class = "conbox" align = "center">
@@ -82,7 +82,7 @@
         </td>
         <td align = "right" width= 50%>
           <text class = "foottext" align = "right">
-            (c) 2020 Realshapes Pvt. Ltd.<br>
+            (c) 2020 Real Shapes<br>
             Designed, developed & maintained by <a class = "hyper" href = "https://www.mantraaxom.com">Mantra Associates</a><br>
           </text>
         </td>

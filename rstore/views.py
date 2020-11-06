@@ -11,12 +11,14 @@ def test(request):
     return render(request, 'test.html', {'test' : serv1})
 
 def index(request):
-    service = serv.objects.all()
+    service = serv.objects.filter(servishigh = True)[:8]
     return render(request, 'index.html', {'service': service})
 
 def services(request):
     service = serv.objects.all()
     return render(request, 'services.html', {'service' : service})
+
+
 
 
 def contact(request):

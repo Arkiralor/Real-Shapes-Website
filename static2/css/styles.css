@@ -31,7 +31,7 @@ ul li{
 }
 
 ul li a{
-  background-color: #242424;
+  background-color: #552549;
   text-decoration: none;
   color: #fff;
   padding: 25px 10vh;
@@ -242,6 +242,14 @@ margin-left: 5px;
   top: 25px;
   font-size: 35px;
   color: #fff;
+}
+
+.order a{
+  position: relative;
+  font-size: 12;
+  text-decoration: none;
+  top: -10px;
+  left: 5px;
 }
 
 .context:hover{
