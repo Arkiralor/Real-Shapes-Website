@@ -13,7 +13,8 @@ urlpatterns = [
     path('contact', views.contact, name = 'contact'),
     path('about', views.about, name = 'about'),
     path('messages', views.messages, name = 'messages'),
-    path('test', views.test, name = 'test')
+    path('test', views.test, name = 'test'),
+    path('clients', views.clients, name = 'clients')
     ##path('mantra', views.test, name = 'mantra')
 
 ]

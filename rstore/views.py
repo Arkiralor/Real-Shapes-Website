@@ -1,7 +1,7 @@
 ##from django.conf import settings
 ##from django.contrib.auth.models import user, auth
 from django.shortcuts import render, redirect
-from .models import serv, msg
+from .models import serv, msg, clin, cart
 from django.contrib.auth.decorators import login_required
 
 
@@ -12,7 +12,12 @@ def test(request):
 
 def index(request):
     service = serv.objects.filter(servishigh = True)[:8]
-    return render(request, 'index.html', {'service': service})
+    clinlist = clin.objects.filter(cliishigh = True)[:5]
+    return render(request, 'index.html', {'service': service, 'clinlist': clinlist})
+
+def clients(request):
+    clinlist = clin.objects.all()
+    return render(request, 'clients.html', {'clinlist': clinlist})
 
 def services(request):
     service = serv.objects.all()

@@ -48,3 +48,11 @@ class msg(models.Model):
     memail = models.CharField(max_length=32)
     mphone = models.CharField(max_length=10)
     mmsg = models.TextField()
+
+class clin(models.Model):
+    cname = models.CharField(max_length=16)
+    cimg = models.ImageField(upload_to = 'assets/images/clientimg')
+    cliishigh = models.BooleanField(default=False)
+    clinurl = models.CharField(max_length=64)
+
+
